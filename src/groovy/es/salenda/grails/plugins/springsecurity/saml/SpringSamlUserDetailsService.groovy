@@ -99,7 +99,7 @@ class SpringSamlUserDetailsService extends GormUserDetailsService implements SAM
 		samlUserAttributeMappings.each { key, value ->
 			// Note that check "user."$key" instanceof String" will fail when field value is null.
 			//  Instead, we have to check field type
-			Class keyType = grailsApplication.getDomainClass(userDomainClassName).properties.find { prop -> prop.name == "$key" }.type
+			Class keyType = grailsApplication.getDomainClass(userDomainClassName).properties.find { prop -> prop.name == "$key" }?.type
 			if (keyType != null && (keyType.isArray() || Collection.class.isAssignableFrom(keyType))) {
 				def attributes = credential.getAttributeAsStringArray(value)
 				attributes?.each() { attrValue ->

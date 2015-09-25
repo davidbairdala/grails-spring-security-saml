@@ -13,6 +13,8 @@ grails.project.dependency.resolution = {
         grailsCentral()
         mavenLocal()
         mavenCentral()
+
+        mavenRepo "http://maven.cbsmgmt.int:8081/nexus/content/repositories/releases/"
     }
 
     dependencies {
@@ -58,3 +60,6 @@ codenarc.reports = {
         title = 'CodeNarc Report'
     }
 }
+
+grails.project.repos.buttonwood.url = "http://maven.cbsmgmt.int:8081/nexus/content/repositories/releases/"
+grails.project.repos.default = "buttonwood"

@@ -48,7 +48,7 @@ import org.apache.commons.httpclient.HttpClient
 
 class SpringSecuritySamlGrailsPlugin {
     // the plugin version
-    def version = "1.0.0-1-SNAPSHOT"
+    def version = "2.0.4"
     // the version or versions of Grails the plugin is designed for
     def grailsVersion = "2.3 > *"
     // the other plugins this plugin depends on

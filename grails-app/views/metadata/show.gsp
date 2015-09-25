@@ -3,6 +3,12 @@
 	<head>
 		<meta name="layout" content="main"/>
 		<title>Metadata</title>
+		<script>
+			$(document).ready(function() {
+				$('body').css('opacity', 1);
+			});
+
+		</script>
 	</head>
 	<body>
 		<div style="margin-left: 20px;">

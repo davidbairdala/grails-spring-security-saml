@@ -19,9 +19,9 @@ grails.project.dependency.resolution = {
 
     dependencies {
 
-        String springSecurityVersion = '3.2.4.RELEASE'
+        String springSecurityVersion = '3.2.8.RELEASE'
 
-        compile 'org.springframework.security.extensions:spring-security-saml2-core:1.0.0.RELEASE'
+        compile 'org.springframework.security.extensions:spring-security-saml2-core:1.0.1.RELEASE'
         compile "org.springframework.security:spring-security-web:$springSecurityVersion", {
             excludes 'aopalliance', 'commons-codec', 'commons-logging', 'fest-assert', 'groovy', 'hsqldb',
                     'jcl-over-slf4j', 'junit', 'logback-classic', 'mockito-core', 'powermock-api-mockito',
@@ -37,7 +37,7 @@ grails.project.dependency.resolution = {
 
         test ":code-coverage:1.2.5"
 
-        compile(":spring-security-core:2.0-RC4")
+        compile(":spring-security-core:2.0-RC5")
 
         compile(":build-test-data:2.2.1",
                 ":hibernate4:4.3.10") {
